@@ -1,3 +1,4 @@
+import 'package:exercise_db/constant/bindings/all-exer_binfding.dart';
 import 'package:exercise_db/constant/colorStyle.dart';
 import 'package:exercise_db/constant/routes.dart';
 import 'package:flutter/material.dart';
@@ -17,6 +18,7 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       theme: ThemeData(colorScheme: ColorScheme.fromSeed(seedColor: ColorConst.highlightColor)),
       initialRoute: '/',
+      initialBinding: ListBindings(),
       getPages: Routes.routes,
     );
   }
